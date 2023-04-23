@@ -13,7 +13,23 @@ namespace ohtuzh {
 
     class LogStat {
     public:
-        class LogStatEntity;
+        class LogStatEntity {
+        public:
+            explicit LogStatEntity(std::string process_name);
+
+            [[nodiscard]] const std::string& GetProcessName() const noexcept;
+
+            [[nodiscard]] const std::array<size_t, 5>& GetLogLevelCounter() const noexcept;
+
+            void AddMention(Log::LogLevel log_level) noexcept;
+
+            bool operator<(const LogStat::LogStatEntity& rhs) const noexcept;
+
+        private:
+
+            std::string process_name_;
+            std::array<size_t, 5> log_level_counter_{0, 0, 0, 0, 0};
+        };
 
         LogStat();
 
@@ -33,25 +49,6 @@ namespace ohtuzh {
 
         std::mutex stat_mutex_;
         std::unordered_map<std::string, LogStatEntity> stats_;
-    };
-
-
-    class LogStat::LogStatEntity {
-    public:
-        explicit LogStatEntity(std::string process_name);
-
-        [[nodiscard]] const std::string& GetProcessName() const noexcept;
-
-        [[nodiscard]] const std::array<size_t, 5>& GetLogLevelCounter() const noexcept;
-
-        void AddMention(Log::LogLevel log_level) noexcept;
-
-        bool operator<(const LogStat::LogStatEntity& rhs) const noexcept;
-
-    private:
-
-        std::string process_name_;
-        std::array<size_t, 5> log_level_counter_{0, 0, 0, 0, 0};
     };
 }
 
