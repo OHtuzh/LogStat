@@ -1,0 +1,10 @@
+[2023-04-06T09:32:01.041][Trace][calculator] log message 1
+[2023-04-06T09:33:19.765][Info][browser] smth
+[2023-04-06T09:35:15.123][Debug][calculator] lazy fox jumps
+[2023-04-06T09:36:59.987][Warn][calculator][part of log message]Calculations complete
+[2023-04-06T09:38:22.321][Error][calculator][][][][ log message 4ds[]fs}{}
+[2023-04-06T09:40:17.530][Debug][browser] log message 2
+[2023-04-06T09:42:12.789][Trace][calculator] #$@#252{}@#$2]34
+[2023-04-06T09:44:16.980][Warn][browser] log message 3
+[2023-04-06T09:46:45.246][Info][calculator] log message 6
+[2023-04-06T09:48:10.333][Error][browser] log message 4

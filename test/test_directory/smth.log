@@ -1,0 +1,4 @@
+[2023-04-06T09:32:01.041][Trace][calculator] log message 1
+[2023-04-06T09:33:19.765][Info][browser] smth
+[2023-04-06T09:35:15.123][Debug][calculator] lazy fox jumps
+[2023-04-06T09:36:59.987][Warn][calculator][part of log message]Calculations complete

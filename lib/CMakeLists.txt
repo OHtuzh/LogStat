@@ -1,0 +1,9 @@
+add_library(
+        log-stat-lib
+        ThreadPool.h
+        ThreadPool.cpp
+        Log.h
+        Log.cpp
+        LogStat.h
+        LogStat.cpp
+)
